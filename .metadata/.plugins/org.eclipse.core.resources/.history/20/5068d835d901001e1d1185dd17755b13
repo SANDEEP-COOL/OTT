@@ -1,0 +1,9 @@
+/*getting all the sideBarIcons...*/
+let sideBarIcons = document.querySelectorAll(".sideBarIcon");
+
+/*iterating over every icon and checking that which icon is hovered...*/
+sideBarIcons.forEach(icon => {
+
+	console.log(icon);
+	
+});

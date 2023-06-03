@@ -1,0 +1,19 @@
+/*getting all the sideBarIcons...*/
+let sideBarIcons = document.querySelectorAll(".sideBarIcon");
+
+/*iterating over every icon and checking that which icon is hovered...*/
+sideBarIcons.forEach(icon => {
+
+	icon.addEventListener("mouseover", function(){
+		let sideBar = document.getElementById("sideBar");
+		sideBar.classList.remove("display-none");
+		sideBar.style.opacity = 1;
+	});
+	
+	icon.addEventListener("mouseout", function(){
+		let sideBar = document.getElementById("sideBar");
+		sideBar.classList.add("display-none");
+		sideBar.style.opacity = 0;
+	});
+	
+});

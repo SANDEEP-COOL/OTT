@@ -1,0 +1,2 @@
+/*getting all the sideBarIcons...*/
+let sideBarIcons = document.querySelectorAll(".sideBarIcon");
