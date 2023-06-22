@@ -1,0 +1,27 @@
+package modals;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import utills.DBConnection;
+
+public class LoginUser {
+
+	/* creating a private and static preparedStatement... */ 
+	private static PreparedStatement ps1; 
+	/* creating a private and static preparedStatement... */
+	
+//	instantiate PreparedStatement - static block - executes very firstly when a class is load...
+	static {
+		
+		try {
+			ps1 = DBConnection.getConnection().prepareStatement("select * from user where username and password");
+		}
+		
+		catch(SQLException e) {
+			
+		}
+		
+	}
+//	instantiate PreparedStatement - static block - executes very firstly when a class is load...	
+	
+}
